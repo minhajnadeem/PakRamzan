@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Dua Ashrah"
+          android:id="@+id/dua"/>
+    <item android:title="Dua Taraveeh"
+          android:id="@+id/taraveeh"/>
+    <item android:title="Share App"
+          android:id="@+id/share"/>
+    <item android:title="Email Admin"
+          android:id="@+id/email"/>
+</menu>

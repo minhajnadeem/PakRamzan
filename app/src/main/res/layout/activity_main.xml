@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/dialogBack"
+              android:orientation="vertical"
+              tools:context="com.example.minhajlib.pakramzan.MainActivity">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/toolBar"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Ramzan Timings 2017\nBahawalpur"
+        android:textSize="22sp"/>
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:datePickerMode="calendar"
+        android:minDate="5/28/2017"
+        android:padding="16dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4227861033559247/3197807012"/>
+
+</LinearLayout>
